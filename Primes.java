@@ -32,6 +32,6 @@ public class Primes {
         } 
 
         int primesPrecentage = primesCounter/n;
-        System.out.printf("There are %d primes between 2 and %d (%d% are primes)", primesCounter, n, primesPrecentage);
+        System.out.printf("There are %d primes between 2 and %d (%d%% are primes)", primesCounter, n, primesPrecentage);
     }
 }

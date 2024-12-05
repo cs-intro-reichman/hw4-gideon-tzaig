@@ -131,10 +131,12 @@ public class ArrCharOps {
      */     
     public static char[] subArray(char[] arr, int beginIndex, int endIndex) {
         // 
-        char[] cropedArr = new char[endIndex];
+        char[] cropedArr = new char[endIndex - beginIndex];
+        int arrIndex = 0;
 
         for (int i = beginIndex; i < endIndex; i ++) {
-            cropedArr[i] = arr[i];
+            cropedArr[arrIndex] = arr[i];
+            arrIndex ++;
         }
 
         return cropedArr;
@@ -190,8 +192,8 @@ public class ArrCharOps {
         // 
         int loxic = 0;
 
-        if (str1.length() == 0) return loxic;
-        if (str2.length() == 0) return loxic;
+        if (str1.length() == 0) return 2;
+        if (str2.length() == 0) return 2;
 
         for (int i = 0; i < Math.max(str1.length(), str2.length()); i ++) {
             if (str1.charAt(i) < str2.charAt(i)) {
