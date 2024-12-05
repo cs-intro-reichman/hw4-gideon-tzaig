@@ -23,7 +23,7 @@ public class Primes {
 
         // Print the primes
         int primesCounter = 0;
-        System.out.printf("Prime numbers up to %d:", n);
+        System.out.printf("Prime numbers up to %d:%n", n);
 
         for (int i = 2; i <= n; i++) {
             if (isPrime[i]) {
