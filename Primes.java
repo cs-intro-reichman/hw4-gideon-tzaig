@@ -1,7 +1,7 @@
 public class Primes {
     public static void main(String[] args) {
         // Create a boolean array to track prime numbers
-        int n = 7; // Integer.parseInt(args[0]);
+        int n = Integer.parseInt(args[0]);
         boolean[] isPrime = new boolean[n + 1];
 
         // Initialize all entries as true. A value in isPrime[i] will
